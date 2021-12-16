@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wake and Bake delivery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="delivery-page-header">
+            <div class="container">
+                <div class="navigation__menu">
+                    <div class="logotype">
+                        <img class="logo" src="../images/logo.png">
+                    </div>
+                    <ul class="menu">
+                        <li><a href="../index.html" class="menu-link">Главная</a><span class="tilda">~</span></li>
+                        <li><a href="../pages/menu.html" class="menu-link">Меню</a><span class="tilda">~</span></li>
+                        <li class="main-page-link"><a href="../pages/delivery.html" class="menu-link home">Доставка</a><span class="tilda">~</span></li>
+                        <li><a href="#" class="menu-link">Франшиза</a></li>
+                        <img class="cross-icon" src="../images/cross.svg">
+                        <div id="icons" class="icons">
+                            <a href="https://vk.com/artyom_ilichev71"><img class="icon first-icon first-id-icon" src="../images/vk-icon.svg"></a>
+                            <a href="https://www.instagram.com/artyom_ilichev/?hl=ru"><img class="icon second-id-icon" src="../images/instagram-icon.svg"></a>
+                            <a href="
+                            https://web.telegram.org/?legacy=1#/im"><img class="icon third-icon third-id-icon" src="../images/telegram-icon.svg"></a>
+                        </div>
+                    </ul>
+                    <!-- <div class="hamburger-icon">
+                        <span></span>
+                    </div> -->
+                    <img class="hamburger-icon" src="../images/hamburger-menu-icon.svg">
+                    <div class="user-icons">
+                        <a href="#"><img class="sign-in open-popup" src="../images/sign-in-icon.svg"></a>
+                        <a href="#"><img class="basket-icon" src="../images/basket-icon.svg"></a>
+                    </div>
+                </div>
+                <h2 class="making-delivery-title">Оформление доставки</h2>
+                <h4 class="fill-the-form-title">Заполните все поля формы</h4>
+                <div class="form__delivery">
+                    <form action="#">
+                        <input type="text" name="user-name" class="input-delivery name-input" placeholder="Имя"> <br>
+                        <input type="text" name="user-phone" id="phone-mask" class="input-delivery phone-input" placeholder="Телефон"> <br>
+                        <input type="text" name="user-address" class="input-delivery address-input" placeholder="Адрес"> <br>
+                        <button type="submit" class="btn-of-from order">Заказать</button>
+                        <button type="reset" class="btn-of-from reset">Сбросить</button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main>
+        </main>
+        <footer>
+            <div class="container">
+              <div class="all__footer__contacts">
+                <div class="left-pfart-of-footer">
+                  <div class="each-contacts-block">
+                    <p class="contacts-title">Адрес:</p>
+                    <p class="contacts-text">
+                      г. Москва, улица Авиаконструктора Миля, дом 5
+                    </p>
+                  </div>
+                  <div class="each-contacts-block">
+                    <div class="times-of-work">
+                      <div class="times-when-open">
+                        <img src="../images/clock-icon.svg" />
+                        <p class="contacts-title times-title">Часы работы:</p>
+                      </div>
+                    </div>
+                    <p class="contacts-text">Ежедневно, с 07:00 до 22:00</p>
+                  </div>
+                  <div class="each-contacts-block trird-contacts-block">
+                    <p class="contacts-title">Связаться с нами:</p>
+                    <a class="phone-number" href="tel:89252386488"
+                      ><p class="contacts-text">+7(925)238-64-88</p></a
+                    >
+                  </div>
+                </div>
+                <div class="right-part-of-footer">
+                  <p class="social-networks-title">Мы в социальных сетях</p>
+                  <div class="icons">
+                    <a href="https://vk.com/artyom_ilichev71"
+                      ><img
+                        class="icon first-icon first-footer-icon"
+                        src="../images/vk-icon.svg"
+                    /></a>
+                    <a href="https://www.instagram.com/artyom_ilichev/?hl=ru"
+                      ><img
+                        class="icon second-footer-icon"
+                        src="../images/instagram-icon.svg"
+                    /></a>
+                    <a
+                      href="
+                                https://web.telegram.org/?legacy=1#/im"
+                      ><img
+                        class="icon third-icon third-footer-icon"
+                        src="../images/telegram-icon.svg"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <p class="copyright-text">
+                Copyright &#169; 2021 W&B All rights reserved.
+              </p>
+            </div>
+          </footer>
+        <div class="mask">
+        </div>
+        <div class="popup-bg">
+          <div class="popup">
+            <i class="fa fa-times close-popup" aria-hidden="true"></i>
+            <p class="popup-text">Вы - пользователь данного сайта</p>
+          </div>
+        </div>
+        <script src="../js/appearing.js" defer></script>
+        <script src="https://unpkg.com/imask"></script> <!--подключение плагина-->
+        <script src="../js/phonemask.js" defer></script>
+        <script src="../js/hamburger.js" defer></script>
+        <script src="../js/popupwindow.js" defer></script>
+    </div>
+</body>
+</html>

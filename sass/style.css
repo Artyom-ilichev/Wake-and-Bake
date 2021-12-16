@@ -1,0 +1,1094 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: RalewayRegular;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.what__is__a__bakery {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+.why__do__prefer__us {
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.gallery__of__bakery, .each-block-of-product-column {
+  opacity: 0;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+.astounding__sale, .form__delivery {
+  opacity: 0;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.what__is__a__bakery.what__is__a__bakery-show, .astounding__sale.astounding__sale-show, .form__delivery-show {
+  opacity: 1;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.why__do__prefer__us.why__do__prefer__us-show, .gallery__of__bakery.gallery__of__bakery-show, .each-block-of-product-column-show {
+  opacity: 1;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+header {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1490px) {
+  .container {
+    padding: 0 25px;
+  }
+}
+
+@font-face {
+  font-family: RalewayRegular;
+  src: url(../fonts/Raleway/raleway-regular.ttf);
+}
+
+@font-face {
+  font-family: RalewayBold;
+  src: url(../fonts/Raleway/raleway-bold.ttf);
+}
+
+@font-face {
+  font-family: RalewayLight;
+  src: url(../fonts/Raleway/raleway-light.ttf);
+}
+
+@font-face {
+  font-family: RalewayMedium;
+  src: url(../fonts/Raleway/raleway-medium.ttf);
+}
+
+@font-face {
+  font-family: RalewayThin;
+  src: url(../fonts/Raleway/raleway-thin.ttf);
+}
+
+@font-face {
+  font-family: RalewaySemiBold;
+  src: url(../fonts/Raleway/raleway-semibold.ttf);
+}
+
+@font-face {
+  font-family: RalewayExtraBold;
+  src: url(../fonts/Raleway/raleway-extrabold.ttf);
+}
+
+@font-face {
+  font-family: Wellfleet;
+  src: url(../fonts/Wellfleet/wellfleet.regular.ttf);
+}
+
+.main-page-header {
+  background: url(../images/background-header-main-page.png) no-repeat center top/cover;
+}
+
+.menu-page-header {
+  background: url(../images/background-of-menu-header.png) no-repeat center top/cover;
+}
+
+.delivery-page-header {
+  background: url(../images/background-of-delivery-header.png) no-repeat center top/cover;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+  font-size: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+li:hover {
+  padding: 0px 15px;
+}
+
+.tab-link {
+  text-decoration: none;
+  font-size: 34px;
+  color: #ffffff;
+  font-family: RalewayBold;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.menu-tabs-titles:hover {
+  padding: 0;
+}
+
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 63px;
+  padding-left: 0;
+}
+
+.title-of-product {
+  font-size: 26px;
+  color: #fff;
+  font-family: RalewayBold;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.price-of-product {
+  font-family: RalewayRegular;
+}
+
+.number {
+  margin: 0;
+  color: #fff;
+  font-family: RalewayRegular;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 33px;
+}
+
+.each-product {
+  padding-bottom: 87px;
+}
+
+.catalog {
+  padding-bottom: 330px;
+  margin-bottom: 700px;
+  display: none;
+}
+
+.catalog-of-products-none {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.add-to-basket {
+  border: none;
+  background: none;
+  border: 1px solid #b69b72;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 16px;
+  font-family: RalewayMedium;
+  padding-top: 10px;
+  padding-right: 17px;
+  padding-left: 17px;
+  padding-bottom: 11px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.add-to-basket:hover {
+  -webkit-box-shadow: 0px 0px 5px 1px #b69b72;
+          box-shadow: 0px 0px 5px 1px #b69b72;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #b1b1b1;
+}
+
+.active-tab {
+  color: #4e4e4e;
+}
+
+.active {
+  display: block !important;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu-link:hover {
+  color: #B69B72;
+  border-bottom: 1px solid #B69B72;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.home {
+  color: #B69B72;
+  border-bottom: 1px solid #B69B72;
+}
+
+.main-page-link {
+  font-family: RalewayBold;
+  color: #B69B72;
+}
+
+.tilda {
+  color: #fff;
+  margin-left: 56px;
+  margin-right: 56px;
+}
+
+.sign-in {
+  margin-right: 15px;
+}
+
+.navigation__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 99px;
+}
+
+.basket-icon {
+  margin-bottom: 1px;
+}
+
+.slider {
+  text-align: center;
+}
+
+.third-description-slider {
+  width: 617px;
+}
+
+h1 {
+  font-family: Wellfleet;
+  font-size: 48px;
+  color: #fff;
+  font-weight: normal;
+  letter-spacing: 0.04em;
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.making-delivery-title {
+  margin: 0;
+  color: #b69b72;
+  font-size: 36px;
+  font-family: RalewayBold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.catalog-product-title {
+  color: #b69b72;
+  margin: 0;
+  font-size: 36px;
+  font-family: RalewayBold;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.fill-the-form-title {
+  color: #fff;
+  margin: 0;
+  font-size: 20px;
+  font-family: RalewayLight;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.input-delivery {
+  background: none;
+  border: none;
+  border: 1px solid #b69b72;
+  border-radius: 15px;
+  width: 392px;
+  height: 63px;
+  margin-bottom: 45px;
+  -webkit-box-shadow: 0px 0px 5px 1px #b69b72;
+          box-shadow: 0px 0px 5px 1px #b69b72;
+  color: #fff;
+  outline: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.input-delivery:hover {
+  cursor: pointer;
+  opacity: 0.75;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.input-delivery[type="text"] {
+  padding-left: 38px;
+  font-size: 24px;
+  font-family: RalewayRegular;
+  color: #bebebe;
+}
+
+.input-delivery::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 24px;
+  font-family: RalewayMedium;
+}
+
+.input-delivery:-ms-input-placeholder {
+  color: #fff;
+  font-size: 24px;
+  font-family: RalewayMedium;
+}
+
+.input-delivery::-ms-input-placeholder {
+  color: #fff;
+  font-size: 24px;
+  font-family: RalewayMedium;
+}
+
+.input-delivery::placeholder {
+  color: #fff;
+  font-size: 24px;
+  font-family: RalewayMedium;
+}
+
+.btn-of-from {
+  background: none;
+  border: none;
+  margin: 0;
+  color: #fff;
+  width: 235px;
+  height: 63px;
+  border-radius: 15px;
+  font-size: 24px;
+  font-family: RalewayMedium;
+  margin-right: 14px;
+  margin-left: 14px;
+  margin-top: 15px;
+}
+
+.order {
+  border: 1px solid #AED98D;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.order:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 5px 0.5px #bfdda8;
+          box-shadow: 0px 0px 5px 0.5px #bfdda8;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #b3b3b3;
+}
+
+.reset {
+  border: 1px solid #C56464;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.reset:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 5px 0.5px #d38585;
+          box-shadow: 0px 0px 5px 0.5px #d38585;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #b3b3b3;
+}
+
+.form__delivery {
+  text-align: center;
+  padding-bottom: 300px;
+  margin-bottom: 500px;
+}
+
+.description-of-slider {
+  font-family: RalewayRegular;
+  color: #fff;
+  font-size: 36px;
+  margin: 0;
+  margin-bottom: 117px;
+}
+
+.ellipse {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #b7b7b7;
+  margin-right: 26px;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.45);
+          box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.45);
+}
+
+.ellipses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider {
+  position: relative;
+  max-width: 1188px;
+  margin: 0 auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding-bottom: 34px;
+}
+
+.first-img-slider {
+  position: relative;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
+.slider-third {
+  position: relative;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.slider-second {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.slide {
+  position: relative;
+}
+
+.slider {
+  max-width: 1160px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-super {
+  position: relative;
+}
+
+.slider-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text-of-slider {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+h1 {
+  text-align: center;
+}
+
+.left-arrow-block {
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  background: rgba(79, 60, 48, 0.7);
+  position: relative;
+  bottom: 30px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-67%, -50%);
+          transform: translate(-67%, -50%);
+}
+
+.arrow-block-position.right {
+  right: 8%;
+}
+
+.arrow-block-position.left {
+  left: 8%;
+}
+
+.arrow-block-position {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-95%);
+          transform: translateY(-95%);
+  width: 55px;
+  height: 55px;
+}
+
+.arrow-block {
+  background: rgba(79, 60, 48, 0.7);
+  border-radius: 10px;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 9999;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.arrow-block:hover {
+  cursor: pointer;
+}
+
+.right-arr {
+  left: 61%;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.slider-buttons {
+  position: absolute;
+  bottom: 16%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.ellipse.active {
+  background: #70523F;
+}
+
+.ellipse:hover {
+  cursor: pointer;
+}
+
+.all__slider {
+  padding-bottom: 39px;
+}
+
+.line {
+  border-bottom: 1px solid #3C2E27;
+  margin-left: auto;
+  margin-right: auto;
+  width: 956px;
+}
+
+.interesting-moment {
+  color: #772424;
+  text-align: center;
+  font-size: 36px;
+  font-family: RalewayBold;
+  margin: 0;
+  margin-top: 56px;
+}
+
+.description-of-interesting-moment {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  font-family: RalewayLight;
+  font-style: italic;
+  font-weight: 300;
+  width: 932px;
+  line-height: 32px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 34px;
+  padding-bottom: 126px;
+}
+
+.about-bakery-title {
+  margin: 0;
+  font-family: RalewayBold;
+  color: #b69b72;
+  font-size: 36px;
+  margin-top: 151px;
+}
+
+.baker-image {
+  margin-top: 33px;
+  margin-left: 46px;
+}
+
+.offer-about-bakery {
+  font-family: RalewayRegular;
+  font-size: 24px;
+  width: 665px;
+  color: #fff;
+  margin: 0;
+  margin-top: 80px;
+  margin-bottom: 71px;
+}
+
+.show-menu {
+  text-decoration: none;
+  color: #fff;
+  font-family: RalewayMedium;
+  font-size: 24px;
+  border: 1px solid #b69b72;
+  border-radius: 15px;
+  padding: 18px 63px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.show-menu:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 0px 0px 6px 2px #b69b72;
+          box-shadow: 0px 0px 6px 2px #b69b72;
+}
+
+.content__about__bakery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 88px;
+}
+
+.prefer-us-title {
+  color: #b69b72;
+  font-size: 36px;
+  margin: 0;
+  font-family: RalewayBold;
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 80px;
+}
+
+.quality {
+  background-color: #1b1b1b;
+  padding: 34px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.circle {
+  background-color: #1b1b1b;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  padding: 37px 30px 37px 30px;
+}
+
+.advantage-title {
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+  font-family: RalewaySemiBold;
+  margin-bottom: 28px;
+}
+
+.offer-of-advantage {
+  color: #fff;
+  font-size: 18px;
+  font-family: RalewayThin;
+  text-align: center;
+  width: 398px;
+  margin: 0;
+  width: 387px;
+}
+
+.sec-offer-advantage {
+  width: 464px;
+}
+
+.third-offer-advantage {
+  width: 419px;
+}
+
+.block-of-advantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.three-blocks-of-advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 88px;
+}
+
+.gallery-of-bakery-title {
+  color: #b69b72;
+  font-size: 36px;
+  margin: 0;
+  font-family: RalewayBold;
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 70px;
+}
+
+.images-of-cakes {
+  background: url(../images/background-of-gallery.png) no-repeat center top/cover;
+}
+
+.description-of-img-gallery {
+  color: #fff;
+  font-size: 22px;
+  margin: 0;
+  font-family: RalewaySemiBold;
+  background-color: #421b16;
+  padding: 9px 60px;
+  margin-top: -4px;
+  width: 252px;
+}
+
+.sec-description-gallery {
+  padding: 9px 44px;
+  width: 284px;
+}
+
+.third-description-gallery {
+  padding: 9px 54px;
+  width: 266px;
+}
+
+.fourth-description-gallery {
+  padding: 9px 71px;
+  width: 230px;
+}
+
+.fifth-description-gallery {
+  padding: 9px 70px;
+  width: 232px;
+}
+
+.sixth-description-gallery {
+  padding: 9px 42px;
+  width: 288px;
+}
+
+.each-image-of-gallery {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.each-image-of-gallery:hover {
+  opacity: 0.75;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 0px 0px 12px 0.2px #90615b;
+          box-shadow: 0px 0px 12px 0.2px #90615b;
+}
+
+.three-top-blocks-of-gallery-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 98px;
+}
+
+.three-bottom-blocks-of-gallery-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 88px;
+}
+
+.astounding-sale-title {
+  color: #b69b72;
+  font-size: 36px;
+  margin: 0;
+  font-family: RalewayBold;
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 20px;
+}
+
+.give-bake-title {
+  font-size: 20px;
+  color: #fff;
+  font-family: RalewayLight;
+  font-style: italic;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 98px;
+}
+
+.amazing-bonuses-title {
+  color: #fff;
+  font-size: 24px;
+  font-family: RalewayRegular;
+  font-weight: 400;
+  border-bottom: 1px solid #fff;
+  width: 581px;
+  margin: 0;
+  margin-bottom: 39px;
+}
+
+.discount-for-text {
+  color: #fff;
+  margin: 0;
+  font-family: RalewayRegular;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.discount {
+  color: #b69b72;
+  font-family: RalewayBold;
+  font-size: 22px;
+}
+
+.mini-description-after-discounts-title {
+  margin: 0;
+  color: #fff;
+  font-size: 24px;
+  font-family: RalewayExtraBold;
+  font-weight: 800;
+}
+
+.mini-description-after-discounts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 46px;
+  margin-left: 229px;
+}
+
+.all__content__part__bonuses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 210px;
+}
+
+.mill {
+  margin-right: 90px;
+  margin-top: -55px;
+}
+
+footer {
+  background: url(../images/background-of-footer.png) no-repeat center top/cover;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.contacts-title {
+  color: #fff;
+  margin: 0;
+  font-family: RalewayBold;
+  font-size: 20px;
+  padding-bottom: 23px;
+}
+
+.contacts-text {
+  margin: 0;
+  color: #fff;
+  font-family: RalewayMedium;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.each-contacts-block {
+  padding-bottom: 65px;
+}
+
+.times-of-work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.times-of-work {
+  padding-bottom: 23px;
+}
+
+.times-title {
+  padding-bottom: 0;
+  margin-left: 13px;
+}
+
+.trird-contacts-block {
+  padding-bottom: 0;
+}
+
+.social-networks-title {
+  color: #fff;
+  margin: 0;
+  font-family: RalewayBold;
+  font-size: 20px;
+  padding-bottom: 35px;
+}
+
+.icon {
+  margin-right: 34px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.third-icon {
+  margin-right: 23px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.first-icon {
+  margin-left: 23px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.first-icon:hover {
+  opacity: 0.75;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.third-icon:hover {
+  opacity: 0.75;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  opacity: 0.75;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.all__footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 75px;
+}
+
+.left-pfart-of-footer {
+  padding-bottom: 55px;
+}
+
+.copyright-text {
+  color: #fff;
+  font-size: 16px;
+  font-family: RalewayLight;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.phone-number {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
